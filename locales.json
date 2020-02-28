@@ -1,0 +1,60 @@
+[
+  {
+    "code": "en",
+    "iso": "en-US",
+    "name": "English"
+  },
+  {
+    "code": "es",
+    "iso": "es-ES",
+    "name": "Spanish"
+  },
+  {
+    "code": "id",
+    "iso": "id-ID",
+    "name": "Indonesian"
+  },
+  {
+    "code": "pt",
+    "iso": "pt-BR",
+    "name": "Portuguese"
+  },
+  {
+    "code": "zh-cn",
+    "iso": "zh-CN",
+    "name": "汉语"
+  },
+  {
+    "code": "ru",
+    "iso": "ru-RU",
+    "name": "русский"
+  },
+  {
+    "code": "tr",
+    "iso": "tr-TR",
+    "name": "Türkçe",
+    "file": "tr.json"
+  },
+  {
+    "code": "ko",
+    "iso": "ko-KO",
+    "name": "한국어"
+  },
+  {
+    "code": "ja",
+    "iso": "ja-JA",
+    "name": "日本語"
+  },
+  {
+    "code": "th",
+    "iso": "th-TH",
+    "name": "ไทย",
+    "file": "th.json"
+  },
+  {
+    "code": "vi",
+    "iso": "vi-VI",
+    "name": "Tiếng Việt",
+    "file": "vi.json"
+  }
+]
