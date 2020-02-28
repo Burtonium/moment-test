@@ -6,9 +6,9 @@
     "file": "en.json"
   },
   {
-    "code": "ja",
-    "iso": "ja-JA",
-    "name": "日本語",
-    "file": "ja.json"
+    "code": "es",
+    "iso": "es-ES",
+    "name": "Espanol",
+    "file": "es.json"
   }
 ]
