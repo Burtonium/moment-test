@@ -6,17 +6,22 @@
         moment-test
       </h1>
       <h2 class="subtitle">
-        My classy Nuxt.js project
+        {{ $t('hello') }}
       </h2>
       <div>
         Here is a formatted date: {{ formatDate('2019-02-01T00:00:00Z') }}
       </div>
+      <p>
+        Change the language:
+        <language-nav />
+      </p>
     </div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import LanguageNav from '~/components/LanguageNav.vue';
 
 export default {
   methods: {
@@ -26,6 +31,7 @@ export default {
   },
   components: {
     Logo,
+    LanguageNav,
   }
 }
 </script>

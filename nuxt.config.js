@@ -44,7 +44,27 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/bulma', '@nuxtjs/axios', '@nuxtjs/dotenv'],
+  modules: [
+    '@nuxtjs/bulma',
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
+    ['nuxt-i18n', {
+      vueI18n: {
+        fallbackLocale: 'en',
+      },
+      locales,
+      lazy: true,
+      langDir: 'i18n/',
+      strategy: 'prefix_except_default',
+      defaultLocale: 'en',
+      detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'i18n_redirected',
+        alwaysRedirect: false,
+        fallbackLocale: 'en',
+      },
+    }],
+  ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
