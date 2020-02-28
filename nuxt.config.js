@@ -29,7 +29,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['@/plugins/moment.js'],
   /*
    ** Nuxt.js dev-modules
    */
