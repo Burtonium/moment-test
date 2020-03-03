@@ -57,12 +57,12 @@ export default {
       langDir: 'i18n/',
       strategy: 'prefix_except_default',
       defaultLocale: 'en',
-      detectBrowserLanguage: {
-        useCookie: true,
-        cookieKey: 'i18n_redirected',
-        alwaysRedirect: false,
-        fallbackLocale: 'en',
-      },
+      // detectBrowserLanguage: {
+      //   // useCookie: true,
+      //   // cookieKey: 'i18n_redirected',
+      //   // alwaysRedirect: false,
+      //   fallbackLocale: 'en',
+      // },
     }],
   ],
   /*
