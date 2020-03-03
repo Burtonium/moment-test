@@ -1,8 +1,8 @@
-export default ({ app }, inject) => {
+export default ({ app }) => {
   const { $moment } = app;
-  inject('moment', (...args) => {
-    const localMoment = $moment(...args);
-    localMoment.locale(app.i18n.locale);
-    return localMoment;
-  });
+  $moment.locale(app.i18n.locale);
+
+  app.i18n.onLanguageSwitched = (_oldLocale, newLocale) => {
+    $moment.locale(newLocale);
+  };
 };
