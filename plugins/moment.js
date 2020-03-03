@@ -1,9 +1,12 @@
-export default ({ app }) => {
-  const { $moment } = app;
-  console.log(app.i18n.locale);
-  $moment.locale(app.i18n.locale);
+import moment from 'moment-timezone';
+
+export default ({ app }, inject) => {
+  const localMoment = moment();
+  localMoment.locale(app.i18n.locale);
 
   app.i18n.onLanguageSwitched = (_oldLocale, newLocale) => {
-    $moment.locale(newLocale);
+    localMoment.locale(newLocale);
   };
+
+  inject('$moment', localMoment);
 };
