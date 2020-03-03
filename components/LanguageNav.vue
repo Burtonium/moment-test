@@ -14,6 +14,8 @@
   </div>
 </template>
 <script>
+import locales from '@/locales.json';
+
 export default {
   data() {
     return { 
@@ -29,9 +31,7 @@ export default {
     },
   },
   computed: {
-    locales() {
-      return this.$i18n.locales;
-    },
+    locales: () => locales,
     locale() {
       return this.$i18n.locale;
     },

@@ -11,10 +11,10 @@
       <div>
         Here is a formatted date: {{ formatDate('2019-02-01T00:00:00Z') }}
       </div>
-      <p>
+      <div>
         Change the language:
         <language-nav />
-      </p>
+      </div>
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ import LanguageNav from '~/components/LanguageNav.vue';
 export default {
   methods: {
     formatDate(date, format = 'MMMM Do YYYY, HH:mm z') {
-      return date && this.$moment(date).tz('GMT').format(format);
+      return date && this.$mtz(date).tz('GMT').format(format);
     },
   },
   components: {
