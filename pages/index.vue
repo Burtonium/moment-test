@@ -26,7 +26,7 @@ import LanguageNav from '~/components/LanguageNav.vue';
 export default {
   methods: {
     formatDate(date, format = 'MMMM Do YYYY, HH:mm z') {
-      return date && this.$mtz(date).tz('GMT').format(format);
+      return date && this.$moment(date).tz('GMT').format(format);
     },
   },
   components: {
